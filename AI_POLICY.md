@@ -7,7 +7,7 @@ However, due to both legal and human reasons, we have to establish boundaries.
 
 > [!CAUTION]
 > **TL;DR:**
-> - We take the responsibility for this project very seriously and we expect you to take your responsibility for your contributions seriously, too.
+> - We take the responsibility for this community very seriously and we expect you to take your responsibility for your contributions seriously, too.
 >   This used to be a given, but it changed now that a pull request is just one prompt away.
 >
 > - Every contribution has to be backed by a human who unequivocally owns the copyright for all changes.
@@ -22,7 +22,7 @@ However, due to both legal and human reasons, we have to establish boundaries.
 > By submitting a pull request, you certify that:
 >
 > - You are the author of the contribution or have the legal right to submit it.
-> - You either hold the copyright to the changes or have explicit legal authorization to contribute them under this project's license.
+> - You either hold the copyright to the changes or have explicit legal authorization to contribute them under this community's license.
 > - You understand the code.
 > - You accept full responsibility for it.
 
@@ -30,15 +30,13 @@ However, due to both legal and human reasons, we have to establish boundaries.
 ## Legal
 
 There is ongoing legal uncertainty regarding the copyright status of LLM-generated works and their provenance.
-Since we do not have a formal [Contributor License Agreement](https://en.wikipedia.org/wiki/Contributor_license_agreement) (CLA), you retain your copyright to your changes to this project.
-
-Therefore, allowing contributions by LLMs has unpredictable consequences for the copyright status of this project – even when leaving aside possible copyright violations due to plagiarism.
+Because of this, allowing contributions by LLMs has unpredictable consequences for the copyright status of the codebase – even when leaving aside possible copyright violations due to plagiarism.
 
 
 ## Human
 
 As the makers of software that is used by millions of people worldwide and with a reputation for high-quality maintenance, we take our responsibility to our users very seriously.
-No matter what LLM vendors or boosters on LinkedIn tell you, we have to manually review every change before merging, because it's **our responsibility** to keep the project stable.
+No matter what LLM vendors or boosters on LinkedIn tell you, we have to manually review every change before merging, because it's **our responsibility** to keep the projects stable.
 
 Please understand that by opening low-quality pull requests you're not helping anyone.
 Worse, you're [poisoning the open source ecosystem](https://lwn.net/Articles/1058266/) that was precarious even before the arrival of LLM tools.
@@ -57,7 +55,7 @@ This dynamic is especially pernicious because it poisons the well for mentoring 
 In practice, this means:
 
 - Pull requests that have an LLM product listed as co-author can't be merged and will be closed without further discussion.
-  We cannot risk the copyright status of this project.
+  We cannot risk the copyright status of the code of the community.
 
   If you used LLM tools during development, you may still submit – but you must remove any LLM co-author tags and take full ownership of every line.
 
@@ -66,7 +64,7 @@ In practice, this means:
   "An LLM wrote it" is **not** an acceptable response to questions or critique.
   **If you cannot explain and defend the changes you submit, do not submit them** and open a high-quality bug report/feature request instead.
 
-- Accounts that exercise bot-like behavior – like automated mass pull requests – will be permanently banned, whether they belong to a human or not.
+- Accounts that exercise bot-like behavior – like automated mass pull requests creation or reviews – will be permanently banned, whether they belong to a human or not.
 
 - Do **not** post LLM-generated review comments – we can prompt LLMs ourselves should we desire their wisdom.
   Do **not** post summaries unless you've fact-checked them and take responsibility for 100% of their content.
