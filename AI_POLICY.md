@@ -1,76 +1,88 @@
 # Generative AI / LLM Policy
 
-We appreciate that we can't realistically police how you author your pull requests, which includes whether you employ large-language model (LLM)-based development tools.
-So, we don't.
+## TL;DR
 
-However, due to both legal and human reasons, we have to establish boundaries.
-
-> [!CAUTION]
-> **TL;DR:**
-> - We take the responsibility for this community very seriously and we expect you to take your responsibility for your contributions seriously, too.
->   This used to be a given, but it changed now that a pull request is just one prompt away.
->
-> - Every contribution has to be backed by a human who unequivocally owns the copyright for all changes.
->   No LLM bots in `Co-authored-by:`s.
->
-> - DoS-by-slop leads to a permanent ban.
->
-> - Absolutely **no** unsupervised agentic tools like OpenClaw.
->
-> ---
->
-> By submitting a pull request, you certify that:
->
-> - You are the author of the contribution or have the legal right to submit it.
-> - You either hold the copyright to the changes or have explicit legal authorization to contribute them under this community's license.
-> - You understand the code.
-> - You accept full responsibility for it.
+- We know that you might use AI tools to help you.
+- We don't accept abdication of responsibility to AI.
+- Every contribution must come from a human who understands it and takes full responsibility, however it was produced.
+- Any AI involvement in authoring means the contribution should include an `Assisted-by:` trailer - it's binary, it either had AI involvement or it didn't, with no threshold to judge.
+- AI tools never go in Co-authored-by:.
+- Unsupervised agentic tools are not permitted.
+- If you can't explain and defend every line, don't submit it.
+- During review: engage with feedback, don't just regenerate and resubmit. "The AI wrote it" isn't a valid answer.
+- When reviewing, don't post AI-generated review comments or summaries without fact-checking them yourself.
+- Consequences: rejection, permanent ban for bot-like behaviour, or being blocked until you talk to the Governance Working Group.
 
 
-## Legal
+## Policy
 
-There is ongoing legal uncertainty regarding the copyright status of LLM-generated works and their provenance.
-Because of this, allowing contributions by LLMs has unpredictable consequences for the copyright status of the codebase – even when leaving aside possible copyright violations due to plagiarism.
+Every contribution must come from a human, however it was created. Unsupervised agentic tools are not permitted. Accounts exhibiting bot-like behaviour - automated mass pull request creation or reviews - will be permanently banned, whether they belong to a human or not.
 
+A contribution is anything you bring to the OCA - code, review, documentation, discussion. Contribution is a social process.
 
-## Human
+Contributions must be relevant and thought through. They must address real problems or real improvements. They should be describable in a short message, and should either have a tight scope or make very few changes.
 
-As the makers of software that is used by millions of people worldwide and with a reputation for high-quality maintenance, we take our responsibility to our users very seriously.
-No matter what LLM vendors or boosters on LinkedIn tell you, we have to manually review every change before merging, because it's **our responsibility** to keep the projects stable.
+Contributors are encouraged to be transparent with their use of AI by including an `Assisted-by:` trailer in the commit when any AI is used to develop the commit. This should be stated for any level of AI use, from advice through to fully autonomous coding, and this trailer carries no implication about the quality of the work. If multiple agents or models were involved, add a separate `Assisted-by:` line for each, following the same convention as `Co-authored-by:` with no blank lines between them:
 
-Please understand that by opening low-quality pull requests you're not helping anyone.
-Worse, you're [poisoning the open source ecosystem](https://lwn.net/Articles/1058266/) that was precarious even before the arrival of LLM tools.
-Having to wade through plausible-looking-but-low-quality pull requests and trying to determine which ones are legit is extremely demoralizing and has already burned out many good maintainers.
+```text
+Assisted-by: Claude Opus 4.6
+Assisted-by: GitHub Copilot:gpt-5
+```
 
-In particular, note that [code reviews are a social process](https://blog.glyph.im/2026/03/what-is-code-review-for.html) and are *not* intended to catch bugs in PRs created by an LLM. 
-If you submit a pull request, we expect you to engage with reviewers and learn from the review, not simply update the prompt that generated the PR and regenerate the code.
+It is not necessary to add this to the PR title, but you should show it in the description.
 
-Put bluntly, we have no time or interest to become part of your vibe coding loop where you drop LLM slop at our door, we spend time and energy to review it, and you just feed it back into the LLM for another iteration.
+Authorship fields such as `Co-authored-by:` must not be used for AI tools, as this remains legally undefined. Disclosure is welcomed and expected; it does not diminish the contributor's responsibility.
 
-This dynamic is especially pernicious because it poisons the well for mentoring new contributors which we are committed to.
+The three benefits of this declaration are as follows:
 
+1. Attestation - It requires the contributor to decide, consciously, what is their own work and what was sourced from AI tools
+2. Audit - It lets OCA see the scale and trend of AI-assisted contribution over time.
+3. Ending the guesswork - Without declaration, poor contributions can be assumed to be AI and good ones assumed human - both often wrongly which is an inefficient distraction.
 
-## Summary
+Self-quality check: if the contributor is not able to read and understand their contribution in full, they should not expect anyone else to. The human contributor takes ultimate and absolute responsibility for their contribution.
 
-In practice, this means:
+Review is a conversation - when a reviewer raises a point with the contributor, then respond to the point raised. Regenerating the contribution and resubmitting without engaging is not a response, and repeated iterations of this kind count against the rework dimension in the metrics framework.
 
-- Pull requests that have an LLM product listed as co-author can't be merged and will be closed without further discussion.
-  We cannot risk the copyright status of the code of the community.
+The contributor must be able to explain and defend every line of their contribution. 'The AI wrote it' is not an answer to a question or a critique - it is a statement that the responsibility this policy requires has not been met.
 
-  If you used LLM tools during development, you may still submit – but you must remove any LLM co-author tags and take full ownership of every line.
+Do not post AI-generated review comments. Maintainers can prompt an LLM themselves if they want its view; what a review contributes is human judgement, and that cannot be delegated. Do not post AI-generated summaries unless you have verified them and take responsibility for their content in full. All LLM output reads plausibly - establishing that it is also correct is the contributor's work, not the reader's.
 
-- By submitting a pull request, **you** take full **technical and legal** responsibility for the contents of the pull request and promise that **you** hold the copyright for the changes submitted.
+If your contribution quantity, quality and rate fall outside acceptable metrics as defined in the Default Metrics Framework or PSC issued Metrics Framework, contributions will be rejected without further review. If the behaviour is not addressed, you will be blocked from contributing until you have discussed the matter with the Governance Working Group.
 
-  "An LLM wrote it" is **not** an acceptable response to questions or critique.
-  **If you cannot explain and defend the changes you submit, do not submit them** and open a high-quality bug report/feature request instead.
+## Default Metrics framework
 
-- Accounts that exercise bot-like behavior – like automated mass pull requests creation or reviews – will be permanently banned, whether they belong to a human or not.
+The contribution volume problem arises when quantity, rate and quality issues combine and the burden on reviewers multiplies rather than adds, and quickly exceeds what any volunteer can absorb.
 
-- Do **not** post LLM-generated review comments – we can prompt LLMs ourselves should we desire their wisdom.
-  Do **not** post summaries unless you've fact-checked them and take responsibility for 100% of their content.
-  Remember that *all* LLM output *looks* **plausible**.
-  When using these tools, it's **your** responsibility to ensure that it's also **correct** and has a reasonable signal-to-noise ratio.
+Unless modified by PSC, contribution metrics are measured as follows.
 
-## Thanks
+The three dimensions:
 
-This policy was based on the policy of the `attrs` project. Many thanks to them for developing it.
+Quantity
+: The size of each contribution - lines changed, files touched, scope covered. Reference point: a patch is under 30 lines in a single file.
+
+Rate
+: How frequently contributions arrive from one source. Reference point: a reviewer needs time to absorb each change; contributions arriving faster than they can reasonably be reviewed are arriving too fast. Wait for acknowledgement before sending another.
+
+Quality
+: How much reviewer effort each contribution consumes - clarity of description, CI status, review iterations needed, relevance to a real problem.
+
+A simple way to reason about the combined burden:
+
+    reviewer burden = quantity x rate
+
+Each dimension multiplies the others. Ten small clean patches over a month is a low burden. Ten large unclear PRs in a day is an unmanageable one, even though the count is the same.
+
+Default red lines, any one of which triggers scrutiny and any two of which trigger rejection:
+
+- more than 5 pull requests or 10 reviews from one source in 24 hours (it might depend on the specific PSC criteria)
+- individual contributions exceeding 500 lines without prior agreement with a maintainer
+- repeated review iterations that regenerate code rather than engage with feedback
+- ultimately, the reviewer decides to accept or reject
+
+These figures are starting points and will be tuned as tooling develops. The principle is fixed: contribute at a pace and size a human volunteer can meet.
+
+## Credits
+
+This policy was based on the policy of the attrs project, with thanks to them for developing it.
+
+Development of this document was led by Stuart J Mackintosh, with significant contribution from Enric Tobella Alomar, and reviewed by the OCA Governance Working Group.
